@@ -21,7 +21,6 @@ const Index: React.FC = () => {
           >
             Farm
           </Link>
-          <div>Opção 2</div>
         </nav>
       </div>
 
