@@ -1,0 +1,14 @@
+/* styles.module.css */
+
+/* Estilo normal do link */
+.link-farm {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  /* Estilo de destaque quando passar o mouse */
+  .link-farm:hover {
+    color: #fbbf24;
+  }
+  
