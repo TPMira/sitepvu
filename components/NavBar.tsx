@@ -22,9 +22,6 @@ const NavBar: React.FC = () => {
         >
           Farm
         </Link>
-        <div>
-          test2
-        </div>
       </nav>
     </div>
   );
