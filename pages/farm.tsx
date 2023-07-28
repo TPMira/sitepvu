@@ -176,7 +176,7 @@ function Farm() {
     try {
       setIsLoadingSubmit(true);
       // Cria a URL para a requisição com os valores dos inputs
-      const url = `http://127.0.0.1:8080/api/colheita/${name}/${xCoord},${yCoord}`;
+      const url = `https://api.cold7.cc/api/colheita/${name}/${xCoord},${yCoord}`;
   
       // Faz a requisição para o servidor
       const response = await fetch(url);
