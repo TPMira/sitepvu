@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from './Card';
 
-export interface SpotInfo {
+interface SpotInfo {
   local: string;
-  time: string | null;
+  time: string; // Altere o tipo para apenas 'string'
   status: boolean;
   url: string;
 }
