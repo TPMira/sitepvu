@@ -129,6 +129,9 @@ function Farm() {
     if (name === 'mira') {
       auth = 'bearerHeader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNBZGRyZXNzIjoiMHg0ODQ3Y2QxNWRkM2EzNGU2NzUyMzQ1OTJjNjY1NGNjNDM4NDExNzM3IiwiaWF0IjoxNjg0ODYxNjYzfQ.Ew0HQXTmMI0H4QAUMH4HG_MQqpKVvwAxKYi04MUqr30';
     }
+    if (name === 'th10') {
+      auth = 'bearerHeader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNBZGRyZXNzIjoiMHg1NTM1NTQwNzNiYTM5MjA3YTBhMmRlODNiZTRjMGQ0MzU5ZDUxZGU0IiwiaWF0IjoxNjg2MTk0OTAzfQ.5WAovbJbS_soQa-EdBwZTVuPXqIjipwbzcBqvEuwMO4';
+    }
     if (name === 'shmervz') {
       auth = 'bearerHeader eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwdWJsaWNBZGRyZXNzIjoiMHgyZWYxOTAzN2ExOTE5NzU4OGEyZTcwMWViNzlmYTc5MmZmMGVhZGYwIiwiaWF0IjoxNjg1MTEwNTMyfQ.LsC4T-b1I_1-yBcjj7yN9IoeXmT7gKOrvq4XbbAY9rc';
     }
