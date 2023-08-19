@@ -16,7 +16,7 @@ interface CardInfoProps {
 const CardInfo: React.FC<CardInfoProps> = ({ coordenada, spotsInfoUpdated }) => {
   return (
     <div>
-      <h1 className='flex justify-center items-center text-2xl font-bold'>
+      <h1 className='flex justify-center items-center text-2xl font-bold text-yellow-300'>
         Coordenadas X,Y : {coordenada.x},  {coordenada.y}
       </h1>
       <div className='flex justify-center items-center h-[80vh]'>

@@ -20,8 +20,8 @@ const Card: React.FC<CardProps> = ({ spotInfo }) => {
   return (
     <div className={cardClassName}>
       <img src={spotInfo.url} alt={spotInfo.local} className="w-20 mx-auto mb-auto" />
-      <p className=''>{spotInfo.local}</p>
-      <p>{spotInfo.time}</p>
+      <p className='text-yellow-300'>{spotInfo.local}</p>
+      <p className='text-yellow-300'>{spotInfo.time}</p>
       {/* ... Outros dados que você queira exibir no card */}
     </div>
   );

@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import UserInfo from '@/components/UserInfo';
 import CardInfo from '@/components/CardInfo';
 import CardWithInputs from '@/components/CardWithInputs';
+import Motion from '@/components/Motion';
 
 
 interface SpotInfo {
@@ -30,6 +31,14 @@ interface UserInfo {
 
 
 function Farm() {
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
+  const handleLoader = () => {
+    setIsLoading(false)
+    setShowContent(true)
+  }
 
   const spotsInfo = [
     { local: 'Spot 1', time: 'null', status: true, url: 'https://i.pinimg.com/originals/d3/82/6a/d3826a943b0d3a9d54ec3d3cba01d0ef.png' },
@@ -261,50 +270,61 @@ function Farm() {
   const spotsInfoUpdated = updateSpotsInfo();
 
   return (
-    <div>
-      <NavBar/>
-  
-      <div className="flex flex-col justify-center items-center min-h bg-gradient-to-t from-gray-600 via-gray-700 to-gray-800">
-        <div className='mt-4 text-center'>
-          {isLoadingSubmit ? (
-            <div className="flex justify-center items-center flex-col h-[89.5vh]">
-              <p className="mb-2">Carregando dados</p>
-              <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingSubmit} />
-            </div>
-          ) : showCardInputs ? (
-            <div>
-              <CardWithInputs onSubmit={handleFormSubmit}/>            
-            </div>
-          ): (
-            <div>
-              {userInfo ? (
-                <UserInfo userInfo={userInfo} />
-              ) : (
-                <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingUserInfo} />
-              )}
 
-              {isLoadingColheita ? (
-                // Se estiver carregando, exiba uma mensagem de carregamento
-                <div className="flex justify-center items-center h-[90vh]">
-                  <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingColheita} />
-                </div>
-              ) : colheitaResults.length === 0 ? (
-                // Se não houver resultados da colheita, exiba uma mensagem de que não há dados
-                <div className="flex justify-center items-center h-[90vh]">
-                  <p>Não há dados disponíveis.</p>
-                </div>
-              ) : (
-                // Se tiver resultados da colheita, exiba os cards dos spots
-                <div>
-                  <CardInfo coordenada={coordenada} spotsInfoUpdated={spotsInfoUpdated} />
-                </div>
-              )}
-          
+    <div>
+
+      { 
+        showContent && (
+
+          <div>
+            <NavBar/>
+        
+            <div className="flex flex-col justify-center items-center min-h bg-gradient-to-t from-gray-600 via-gray-700 to-gray-800 h-[97.5vh]">
+              <div className='mt-4 text-center'>
+                {isLoadingSubmit ? (
+                  <div className="flex justify-center items-center flex-col h-[89.5vh]">
+                    <p className="mb-2">Carregando dados</p>
+                    <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingSubmit} />
+                  </div>
+                ) : showCardInputs ? (
+                  <div>
+                    <CardWithInputs onSubmit={handleFormSubmit}/>            
+                  </div>
+                ): (
+                  <div>
+                    {userInfo ? (
+                      <UserInfo userInfo={userInfo} />
+                    ) : (
+                      <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingUserInfo} />
+                    )}
+
+                    {isLoadingColheita ? (
+                      // Se estiver carregando, exiba uma mensagem de carregamento
+                      <div className="flex justify-center items-center h-[90vh]">
+                        <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingColheita} />
+                      </div>
+                    ) : colheitaResults.length === 0 ? (
+                      // Se não houver resultados da colheita, exiba uma mensagem de que não há dados
+                      <div className="flex justify-center items-center h-[90vh]">
+                        <p>Não há dados disponíveis.</p>
+                      </div>
+                    ) : (
+                      // Se tiver resultados da colheita, exiba os cards dos spots
+                      <div>
+                        <CardInfo coordenada={coordenada} spotsInfoUpdated={spotsInfoUpdated} />
+                      </div>
+                    )}
+                
+                  </div>
+                )}
+              </div>
             </div>
-          )}
-        </div>
-      </div>
-      <Footer/>
+            <Footer/>
+          </div>
+        )
+      }
+      <Motion isLoading={isLoading} setIsLoading={handleLoader}/>
+
     </div>
   );
 }  

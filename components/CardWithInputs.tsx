@@ -35,37 +35,37 @@ const CardWithInputs: React.FC<CardWithInputsProps> = ({ onSubmit }) => {
 
   return (
     <div className="flex justify-center items-center h-[89.5vh]">
-      <div className="bg-gray-900 p-8 rounded shadow-lg">
-        <h2 className="text-xl font-semibold mb-4">Name and Land</h2>
+      <div className="bg-gray-900 p-8 rounded-3xl shadow-2xl shadow-yellow-300">
+        <h2 className="text-xl font-semibold mb-4 text-yellow-300">Name and Land</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name" className='text-yellow-300'>Name:</label>
             <input
               type="text"
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="border border-gray-300 rounded p-2 w-full text-black"
+              className="border border-gray-300 bg-gray-600 rounded p-2 w-full text-white"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="xCoord">X Coord:</label>
+            <label htmlFor="xCoord" className='text-yellow-300'>X Coord:</label>
             <input
               type="number"
               id="xCoord"
               value={xCoord}
               onChange={(e) => setXCoord(e.target.value)}
-              className="border border-gray-300 rounded p-2 w-full text-black"
+              className="border border-gray-300 rounded bg-gray-600 p-2 w-full text-white"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="yCoord">Y Coord:</label>
+            <label htmlFor="yCoord" className='text-yellow-300'>Y Coord:</label>
             <input
               type="number"
               id="yCoord"
               value={yCoord}
               onChange={(e) => setYCoord(e.target.value)}
-              className="border border-gray-300 rounded p-2 w-full text-black"
+              className="border border-gray-300 rounded bg-gray-600 p-2 w-full text-white"
             />
           </div>
           <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
