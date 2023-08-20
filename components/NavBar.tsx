@@ -121,7 +121,7 @@ const NavBar: React.FC = () => {
           </Link>
 
           <Link
-            href='/test'
+            href='https://cd7-videos.netlify.app/'
             >
             <motion.h1
               className='text-yellow-300'

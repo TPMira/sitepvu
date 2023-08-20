@@ -1,4 +1,5 @@
 import React, { useState} from 'react';
+import ButtonCustom from './ButtonCustom';
 
 interface CardWithInputsProps {
   onSubmit: (name: string, xCoord: string, yCoord: string) => void;
@@ -68,9 +69,7 @@ const CardWithInputs: React.FC<CardWithInputsProps> = ({ onSubmit }) => {
               className="border border-gray-300 rounded bg-gray-600 p-2 w-full text-white"
             />
           </div>
-          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
-            Submit
-          </button>
+          <ButtonCustom/>
         </form>
       </div>
     </div>

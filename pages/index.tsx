@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 import Motion from '@/components/Motion';
@@ -12,7 +10,7 @@ const Index: React.FC = () => {
 
   const handleLoader = () => {
     setIsLoading(false)
-    setShowContent(true)
+    setTimeout(() =>  setShowContent(true), 450)
   }
 
   return (

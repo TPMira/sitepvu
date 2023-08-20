@@ -37,7 +37,7 @@ function Farm() {
 
   const handleLoader = () => {
     setIsLoading(false)
-    setShowContent(true)
+    setTimeout(() =>  setShowContent(true), 450)
   }
 
   const spotsInfo = [
@@ -283,7 +283,7 @@ function Farm() {
               <div className='mt-4 text-center'>
                 {isLoadingSubmit ? (
                   <div className="flex justify-center items-center flex-col h-[89.5vh]">
-                    <p className="mb-2">Carregando dados</p>
+                    <p className="mb-2 text-yellow-300">Carregando dados</p>
                     <ClipLoader size={35} color={'#3B82F6'} loading={isLoadingSubmit} />
                   </div>
                 ) : showCardInputs ? (
