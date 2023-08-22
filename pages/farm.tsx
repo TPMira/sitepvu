@@ -9,6 +9,7 @@ import UserInfo from '@/components/UserInfo';
 import CardInfo from '@/components/CardInfo';
 import CardWithInputs from '@/components/CardWithInputs';
 import Motion from '@/components/Motion';
+import { motion } from 'framer-motion';
 
 
 interface SpotInfo {
@@ -276,7 +277,12 @@ function Farm() {
       { 
         showContent && (
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.9, ease: 'easeInOut' }}
+          >
             <NavBar/>
         
             <div className="flex flex-col justify-center items-center min-h bg-gradient-to-t from-gray-600 via-gray-700 to-gray-800 h-[97.5vh]">
@@ -320,7 +326,7 @@ function Farm() {
               </div>
             </div>
             <Footer/>
-          </div>
+          </motion.div>
         )
       }
       <Motion isLoading={isLoading} setIsLoading={handleLoader}/>

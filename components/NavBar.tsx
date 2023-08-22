@@ -39,10 +39,6 @@ const NavBar: React.FC = () => {
             width="40"
             height="40"
             viewBox="0 0 100 100"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.9, ease: 'easeInOut' }}
             >
             <defs>
             <pattern
@@ -78,10 +74,6 @@ const NavBar: React.FC = () => {
           >
             <motion.h1
                   className='text-yellow-300'
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 1.9, ease: 'easeInOut' }}
                   whileHover={{ borderBottom: '2px solid yellow' }}
               >
                   COLD 7
@@ -95,10 +87,6 @@ const NavBar: React.FC = () => {
           >
             <motion.h1
               className='text-yellow-300'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.9, ease: 'easeInOut' }}
               whileHover={{ borderBottom: '2px solid yellow' }}
             >
               <AiFillGithub size={24} />
@@ -110,10 +98,6 @@ const NavBar: React.FC = () => {
             >
             <motion.h1
               className='text-yellow-300'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.9, ease: 'easeInOut' }}
               whileHover={{ borderBottom: '2px solid yellow' }}
               >
               <AiFillTwitterCircle size={24} />
@@ -125,10 +109,6 @@ const NavBar: React.FC = () => {
             >
             <motion.h1
               className='text-yellow-300'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.9, ease: 'easeInOut' }}
               whileHover={{ borderBottom: '2px solid yellow' }}
               >
               <AiFillYoutube size={24} />
@@ -140,10 +120,6 @@ const NavBar: React.FC = () => {
             >
             <motion.h1
               className='text-yellow-300'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.9, ease: 'easeInOut' }}
               whileHover={{ borderBottom: '2px solid yellow' }}
               >
               <AiFillInstagram size={24} />
@@ -155,10 +131,6 @@ const NavBar: React.FC = () => {
             >
             <motion.h1
               className='text-yellow-300'
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.9, ease: 'easeInOut' }}
               whileHover={{ borderBottom: '2px solid yellow' }}
               >
               <PiPlantDuotone   size={24} />
