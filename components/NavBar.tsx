@@ -2,6 +2,10 @@ import React, { useState} from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { PiPlantDuotone } from 'react-icons/pi';
+import { AiFillYoutube } from 'react-icons/ai';
+import { MdLibraryMusic } from 'react-icons/md'
+import { BiSolidUserCircle } from 'react-icons/bi'
+
 
 const NavBar: React.FC = () => {
 
@@ -33,7 +37,7 @@ const NavBar: React.FC = () => {
         }}
       ></motion.div>
       <div className='flex justify-between px-8'>
-        <div className='flex items-center gap-1'>
+        <div className='flex items-center gap-2'>
           <motion.svg
             width="40"
             height="40"
@@ -78,6 +82,16 @@ const NavBar: React.FC = () => {
                   COLD 7
               </motion.h1>
           </Link>
+          <div className='group hover:grid-cols-3  cursor-pointer text-yellow-300 hover:text-white pl-10'>
+            SITES
+            <div className='hidden group-hover:block gap-2 bg-gray-900 p-4 absolute text-yellow-300  shadow shadow-yellow-300'>
+              <ul>
+                <Link href='https://cd7-videos.netlify.app/' className='flex gap-2'> <AiFillYoutube size={24} />Clone Youtube</Link>
+                <Link href='https://cold7music.netlify.app/' className='flex gap-2'> <MdLibraryMusic size={24} />Clone Music</Link>
+                <Link href='https://portfolio-mira.netlify.app/' className='flex gap-2'> <BiSolidUserCircle size={24} />Portfolio</Link>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <ul className='flex items-center'>

@@ -34,7 +34,11 @@ const Index: React.FC = () => {
               className="flex flex-col justify-center items-center h-[97.5vh] bg-gradient-to-t from-gray-700 via-gray-800 to-gray-900 max-sm:px-8 text-center"
               
             >
-              <motion.h1 className="text-4xl font-bold text-yellow-300 mb-8 ">Welcome to BOT PVU</motion.h1>
+            <motion.h1
+              className="text-4xl font-bold mb-8 text-yellow-300"
+            >
+              Welcome to BOT PVU
+            </motion.h1>
               <motion.p className="text-xl text-yellow-300">This is the main page of your PVU Bot application.</motion.p>
               <motion.p className="text-xl text-yellow-300 mt-2">You can start by navigating to the Farm page using the icon :</motion.p>
               <Link href='/farm' className='text-yellow-300'>

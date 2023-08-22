@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      shadow:{
+        custom: '0 10px 10px -12px rgba(0, 0, 0, 0.25)'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
