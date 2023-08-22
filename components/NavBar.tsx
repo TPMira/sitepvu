@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { AiFillGithub, AiFillTwitterCircle, AiFillYoutube, AiFillInstagram } from 'react-icons/ai';
 import { PiPlantDuotone } from 'react-icons/pi';
 
 const NavBar: React.FC = () => {
@@ -81,57 +80,14 @@ const NavBar: React.FC = () => {
           </Link>
         </div>
 
-        <ul className='flex items-center gap-3'>
-          <Link
-            href='/test'
-          >
-            <motion.h1
-              className='text-yellow-300'
-              whileHover={{ borderBottom: '2px solid yellow' }}
-            >
-              <AiFillGithub size={24} />
-            </motion.h1>
-          </Link>
-
-          <Link
-            href='/test'
-            >
-            <motion.h1
-              className='text-yellow-300'
-              whileHover={{ borderBottom: '2px solid yellow' }}
-              >
-              <AiFillTwitterCircle size={24} />
-            </motion.h1>
-          </Link>
-
-          <Link
-            href='https://cd7-videos.netlify.app/'
-            >
-            <motion.h1
-              className='text-yellow-300'
-              whileHover={{ borderBottom: '2px solid yellow' }}
-              >
-              <AiFillYoutube size={24} />
-            </motion.h1>
-          </Link>
-
-          <Link
-            href='/test'
-            >
-            <motion.h1
-              className='text-yellow-300'
-              whileHover={{ borderBottom: '2px solid yellow' }}
-              >
-              <AiFillInstagram size={24} />
-            </motion.h1>
-          </Link>
+        <ul className='flex items-center'>
 
           <Link
             href='/farm'
             >
             <motion.h1
               className='text-yellow-300'
-              whileHover={{ borderBottom: '2px solid yellow' }}
+              whileHover={{ scale: 1.4 }}
               >
               <PiPlantDuotone   size={24} />
             </motion.h1>
