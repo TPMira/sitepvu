@@ -82,13 +82,13 @@ const NavBar: React.FC = () => {
                   COLD 7
               </motion.h1>
           </Link>
-          <div className='group hover:grid-cols-3  cursor-pointer text-yellow-300 hover:text-white pl-10'>
+          <div className='group hover:grid-cols-3 cursor-pointer text-yellow-300 hover:text-white pl-10'>
             SITES
-            <div className='hidden group-hover:block gap-2 bg-gray-900 p-4 absolute text-yellow-300  shadow shadow-yellow-300'>
-              <ul>
-                <Link href='https://cd7-videos.netlify.app/' className='flex gap-2'> <AiFillYoutube size={24} />Clone Youtube</Link>
-                <Link href='https://cold7music.netlify.app/' className='flex gap-2'> <MdLibraryMusic size={24} />Clone Music</Link>
-                <Link href='https://portfolio-mira.netlify.app/' className='flex gap-2'> <BiSolidUserCircle size={24} />Portfolio</Link>
+            <div className='hidden group-hover:block   bg-gray-900 p-4 absolute text-yellow-300  shadow shadow-yellow-300'>
+              <ul className='space-y-2'>
+                <Link href='https://cd7-videos.netlify.app/' className='flex gap-2 py-1 hover:bg-white rounded-md hover:bg-opacity-20 px-2'> <AiFillYoutube size={24} />Clone Youtube</Link>
+                <Link href='https://cold7music.netlify.app/' className='flex gap-2 px-2 py-1 hover:bg-white rounded-md hover:bg-opacity-20'> <MdLibraryMusic size={24} />Clone Music</Link>
+                <Link href='https://portfolio-mira.netlify.app/' className='flex gap-2 px-2 py-1 hover:bg-white rounded-md hover:bg-opacity-20'> <BiSolidUserCircle size={24} />Portfolio</Link>
               </ul>
             </div>
           </div>
