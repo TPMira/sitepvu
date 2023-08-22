@@ -37,9 +37,9 @@ const Index: React.FC = () => {
             <motion.h1
               className="text-4xl font-bold mb-8 text-yellow-300"
             >
-              Welcome to BOT PVU
+              Welcome to COLD 7
             </motion.h1>
-              <motion.p className="text-xl text-yellow-300">This is the main page of your PVU Bot application.</motion.p>
+              <motion.p className="text-xl text-yellow-300">This is the main page of application.</motion.p>
               <motion.p className="text-xl text-yellow-300 mt-2">You can start by navigating to the Farm page using the icon :</motion.p>
               <Link href='/farm' className='text-yellow-300'>
                 <motion.div whileHover={{ scale: 1.2 }}> <PiPlantDuotone   size={32} /> </motion.div>
