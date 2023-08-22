@@ -305,8 +305,8 @@ function Farm() {
                       </div>
                     ) : colheitaResults.length === 0 ? (
                       // Se não houver resultados da colheita, exiba uma mensagem de que não há dados
-                      <div className="flex justify-center items-center h-[90vh]">
-                        <p>Não há dados disponíveis.</p>
+                      <div className="flex justify-center items-center h-[80vh]">
+                        <p className='text-yellow-300'>Não há dados disponíveis.</p>
                       </div>
                     ) : (
                       // Se tiver resultados da colheita, exiba os cards dos spots

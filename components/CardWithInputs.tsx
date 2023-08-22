@@ -10,6 +10,8 @@ const CardWithInputs: React.FC<CardWithInputsProps> = ({ onSubmit }) => {
   const [xCoord, setXCoord] = useState('');
   const [yCoord, setYCoord] = useState('');
 
+  const allInputsFilled = name && xCoord && yCoord;
+
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -36,8 +38,8 @@ const CardWithInputs: React.FC<CardWithInputsProps> = ({ onSubmit }) => {
 
   return (
     <div className="flex justify-center items-center h-[89.5vh]">
-      <div className="bg-gray-900 p-8 rounded-3xl shadow-2xl shadow-yellow-300">
-        <h2 className="text-xl font-semibold mb-4 text-yellow-300">Name and Land</h2>
+      <div className="bg-gray-900 p-8 rounded-3xl shadow-2xl hover:shadow-yellow-300 ">
+        <h2 className="text-xl font-semibold mb-4 text-yellow-300">SEARCH</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className='text-yellow-300'>Name:</label>
@@ -69,7 +71,7 @@ const CardWithInputs: React.FC<CardWithInputsProps> = ({ onSubmit }) => {
               className="border border-gray-300 rounded bg-gray-600 p-2 w-full text-white"
             />
           </div>
-          <ButtonCustom/>
+          {allInputsFilled && <ButtonCustom />}
         </form>
       </div>
     </div>
