@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
   return (
     <motion.div className='fixed bottom-0 left-0 right-0 bg-gray-900 py-1 px-8 border-t border-yellow-200 flex justify-between items-center'>
 
-        <ul className='flex items-center gap-3'>
+        <ul className='flex items-center gap-2'>
             <Link
               href='/test'
             >
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
       <div>
 
       
-        <ul className='flex items-center gap-3'>
+        <ul className='flex items-center gap-2'>
           <Link
             href='https://cd7-videos.netlify.app/'
             >
